@@ -1,0 +1,259 @@
+/* Kafeef legal pages */
+
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e5e5e5;
+    --accent: #C56F00;       /* Kafeef saffron — AAA on white */
+    --card: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+}
+
+header.site {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    z-index: 10;
+}
+
+header.site .inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+header.site .brand {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    text-decoration: none;
+}
+
+header.site nav a {
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+header.site nav a:hover,
+header.site nav a.active {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    color: var(--text);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 36px 0 10px;
+    color: var(--text);
+}
+
+p, li {
+    margin: 0 0 12px;
+    color: var(--text);
+}
+
+ul {
+    padding-left: 22px;
+    margin: 0 0 14px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0 0 28px;
+}
+
+.lead {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 24px;
+}
+
+.callout {
+    background: rgba(197, 111, 0, 0.07);
+    border: 1px solid rgba(197, 111, 0, 0.35);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0 28px;
+}
+
+.callout strong {
+    color: var(--accent);
+}
+
+.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 24px 0 36px;
+    font-size: 14px;
+}
+
+.toc h3 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.toc ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.toc li {
+    margin-bottom: 4px;
+}
+
+.toc a {
+    color: var(--text);
+}
+
+.toc a:hover {
+    color: var(--accent);
+}
+
+footer.site {
+    border-top: 1px solid var(--border);
+    padding: 28px 24px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+footer.site a {
+    color: var(--muted);
+    margin: 0 10px;
+}
+
+footer.site a:hover {
+    color: var(--text);
+}
+
+.contact {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 32px 0;
+}
+
+.contact strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.home-hero {
+    text-align: center;
+    padding: 48px 24px;
+}
+
+.home-hero h1 {
+    font-size: 32px;
+}
+
+.home-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.home-links a {
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    background: var(--card);
+}
+
+.home-links a:hover {
+    border-color: var(--accent);
+    text-decoration: none;
+}
+
+.home-links a strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.home-links a span {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f0f10;
+        --text: #f2f2f2;
+        --muted: #9a9a9a;
+        --border: #262628;
+        --accent: #E8A33D;       /* lighter saffron for dark backgrounds */
+        --card: #17171a;
+    }
+    .callout {
+        background: rgba(232, 163, 61, 0.10);
+        border-color: rgba(232, 163, 61, 0.40);
+    }
+}
